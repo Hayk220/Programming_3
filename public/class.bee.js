@@ -1,10 +1,7 @@
-//Bee
 
-class Bee {
+class Bee extends LivingCreature {
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
-        this.index = index;
+        super(x, y, index);
         this.energy = 8;
 
     }
@@ -136,11 +133,11 @@ class Bee {
                 this.move();
             }
         }
-        
+
 
     }
 
-    die(){
+    die() {
         matrix[this.y][this.x] = 0;
     }
 

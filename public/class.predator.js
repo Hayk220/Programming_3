@@ -1,12 +1,7 @@
-//Gishatich
-
-class Gishatich {
+class Gishatich extends LivingCreature {
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
-        this.index = index;
+        super(x, y, index)
         this.energy = 8;
-
         this.acted = false;
     }
     getNewCoordinates() {
@@ -116,7 +111,7 @@ class Gishatich {
                 this.y = newY;
                 this.acted == true;
                 this.energy++;
-                if (this.energy >= 15 ) {
+                if (this.energy >= 15) {
                     this.mul();
                     this.energy = 4;
                 }
@@ -125,7 +120,7 @@ class Gishatich {
                 this.move();
             }
         }
-    
+
 
     }
 

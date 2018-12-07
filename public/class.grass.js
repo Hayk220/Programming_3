@@ -1,4 +1,4 @@
-class Grass extends LivingCreature{
+class Grass extends LivingCreature {
 
     mul() {
         this.multiply++;

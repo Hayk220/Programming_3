@@ -1,4 +1,4 @@
-class GrassEater extends LivingCreature{
+class GrassEater extends LivingCreature {
     constructor(x, y, index) {
         super(x, y, index);
         this.energy = 8;
@@ -110,7 +110,7 @@ class GrassEater extends LivingCreature{
             else {
                 this.move();
             }
-            
+
         }
 
     }
