@@ -50,27 +50,6 @@ function draw() {
   for (var y = 0; y < matrix.length; y++) {
     for (var x = 0; x < matrix[y].length; x++) {
       if (matrix[y][x].index == 1) {
-        matrix[y][x].mul();
-      }
-      else if (matrix[y][x].index == 2) {
-        matrix[y][x].eat();
-
-      }
-      else if (matrix[y][x].index == 3) {
-        matrix[y][x].eat();
-      }
-      else if (matrix[y][x].index == 4) {
-        matrix[y][x].mul();
-      }
-      else if (matrix[y][x].index == 5) {
-        matrix[y][x].eat();
-      }
-    }
-  }
-
-  for (var y = 0; y < matrix.length; y++) {
-    for (var x = 0; x < matrix[y].length; x++) {
-      if (matrix[y][x].index == 1) {
         fill('green');
         rect(x * side, y * side, side, side);
 
